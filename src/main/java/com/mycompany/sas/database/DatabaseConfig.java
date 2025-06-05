@@ -12,17 +12,11 @@ import java.sql.SQLException;
  * @author ARTHURSANTOSTAVARESS
  */
 public class DatabaseConfig {
-    String url = Dotenv.load().get("DATABASE_URL");
+   private final String url = Dotenv.load().get("DATABASE_URL");
     
     
-    public  Connection initConnection() {
-        try(Connection conn = DriverManager.getConnection(this.url)) {
-            System.out.println("Conexão estabelecida com sucesso");
-            return conn; 
-        } catch (SQLException e) {
-            System.out.println("Erro ao conectar" + " " + e.getMessage());
-            return  null;
-        }
+    public  Connection initConnection() throws SQLException{
+         return  DriverManager.getConnection(url);
     }
     
     

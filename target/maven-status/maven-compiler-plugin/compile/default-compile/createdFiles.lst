@@ -1,6 +1,7 @@
 com\mycompany\sas\utils\Pallete.class
-com\mycompany\sas\views\LoginFrame$2.class
 com\mycompany\sas\database\DatabaseConfig.class
+com\mycompany\sas\dao\UserDao.class
 com\mycompany\sas\views\LoginFrame.class
+com\mycompany\sas\models\User.class
 com\mycompany\sas\Sas.class
 com\mycompany\sas\views\LoginFrame$1.class
