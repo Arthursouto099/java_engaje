@@ -24,7 +24,7 @@ public class UserDaoTest {
     
     @Test
     public  void insertInto() throws SQLException{
-        User user = new User("juliano", "juliano@gmail.com", "1");
+        User user = new User("arthur", "arthur@gmail.com", "1");
         UserDao.insert(user);
         assertTrue(user.getId() != null ,  "ID deve ser Gerado");
         
